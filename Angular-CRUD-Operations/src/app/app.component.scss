@@ -1,0 +1,269 @@
+// user-list.component.scss
+
+// Define colors for reuse
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #dc3545;
+$info-color: #0dcaf0;
+$warning-color: #ffc107;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+
+// Card styles
+.card {
+  border: 1px solid $light-color;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+
+  &-header {
+    background-color: $dark-color;
+    color: $light-color;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  &-body {
+    padding: 1rem;
+
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #212529;
+
+      th, td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+      }// user-list.component.scss
+
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #dc3545;
+$info-color: #0dcaf0;
+$warning-color: #ffc107;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+
+.card {
+  border: 1px solid $light-color;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+
+  &-header {
+    background-color: $dark-color;
+    color: $light-color;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  &-body {
+    padding: 1rem;
+
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #212529;
+
+      th, td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+      }
+
+      thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      tbody + tbody {
+        border-top: 2px solid #dee2e6;
+      }
+    }
+  }
+
+  &-footer {
+    padding: 1rem;
+    background-color: $light-color;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+  }
+}
+
+.btn {
+  &-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &-danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+
+  &-info {
+    background-color: $info-color;
+    border-color: $info-color;
+  }
+
+  &-success {
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+
+  &-warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+
+  &-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+form {
+  .row {
+    margin-bottom: 1rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 1rem;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .col-sm-10 {
+      display: flex;
+      align-items: center;
+
+      .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+
+        &.is-invalid {
+          border-color: $danger-color;
+        }
+      }
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+
+      thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      tbody + tbody {
+        border-top: 2px solid #dee2e6;
+      }
+    }
+  }
+
+  &-footer {
+    padding: 1rem;
+    background-color: $light-color;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+  }
+}
+
+// Button styles
+.btn {
+  &-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &-danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+
+  &-info {
+    background-color: $info-color;
+    border-color: $info-color;
+  }
+
+  &-success {
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+
+  &-warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+
+  &-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+// Form styles
+form {
+  .row {
+    margin-bottom: 1rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 1rem;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .col-sm-10 {
+      display: flex;
+      align-items: center;
+
+      .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+
+        &.is-invalid {
+          border-color: $danger-color;
+        }
+      }
+    }
+  }
+}
+
+// Overall layout styles
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
